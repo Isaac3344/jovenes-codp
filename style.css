@@ -271,12 +271,12 @@ section {
 }
 
 .imagen-carrusel1{
-    width: 48%;
+    width: 40%;
     height: auto;
     max-width: 600px;
     display: block;
     margin: 20px auto;
-    margin-top: 8px;
+    margin-top: 50px;
     border-radius: 20px;
 }
 
@@ -315,15 +315,6 @@ section {
 .control-circular:focus {
     outline: none;
 }
-
-
-
-
-
-
-
-
-
 
 @keyframes automatizacion {
     0%, 30% {
@@ -568,6 +559,16 @@ hr {
         padding: 15px;
     }
 
+    .imagen-carrusel1{
+        width: 65%;
+        height: auto;
+        max-width: 600px;
+        display: block;
+        margin: 20px auto;
+        margin-top: 50px;
+        border-radius: 20px;
+    }
+
     .c1{
         width: 50%;
         height: 50%;
@@ -624,6 +625,16 @@ hr {
     .titulo {
         font-size: 1.4em;
         text-align: center;
+    }
+
+    .imagen-carrusel1{
+        width: 65%;
+        height: auto;
+        max-width: 600px;
+        display: block;
+        margin: 20px auto;
+        margin-top: 50px;
+        border-radius: 20px;
     }
 
     .c1{
@@ -693,6 +704,16 @@ hr {
     .titulo {
         font-size: 1.4em;
         text-align: center;
+    }
+
+    .imagen-carrusel1{
+        width: 65%;
+        height: auto;
+        max-width: 600px;
+        display: block;
+        margin: 20px auto;
+        margin-top: 50px;
+        border-radius: 20px;
     }
 
     .c1{
@@ -977,59 +998,52 @@ a{
     animation: slideInLeft 1s ease-out forwards;
 }
 
-.comments-section {
-    margin: 20px auto;
-    padding: 20px;
+.container-form{
     max-width: 600px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #fafafa;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
 }
 
-.comment-box {
+h2 {
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.comment-box textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    resize: vertical; /* Permite redimensionar verticalmente */
-}
-
-.comment-box button {
-    width: 100%;
-}
-
-.comments-section {
-    margin: 20px auto;
+form {
+    background-color: #f9f9f9;
     padding: 20px;
-    max-width: 600px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #fafafa;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-.comment-box {
+
+.form-group {
     margin-bottom: 20px;
 }
-.comment {
-    margin-bottom: 10px;
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #fff;
-    position: relative; /* Para posicionar el botón de eliminar */
-}
-.comment p {
-    margin: 0;
-}
-.delete-btn {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    cursor: pointer;
-    color: red;
-    display: none; /* Ocultar por defecto */
+    box-sizing: border-box;
 }
 
+button[type="submit"] {
+    background-color: #004d4d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #004d4dbc;
+}

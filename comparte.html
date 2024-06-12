@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sección de Comentarios</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    
-    <!--MENU DE OPCIONES-->
-    <header class="navbar">
+    <title>Jovenes Codp</title>
+</head>
+<body>
+
+     <!--MENU DE OPCIONES-->
+     <header class="navbar">
         <div class="logo">Jovenes Codp</div>
         <div class="menu-toggle" id="menu-toggle">
             <div class="bar"></div>
@@ -18,28 +19,30 @@
         <ul class="nav-links" id="nav-links">
             <li><a href="index.html">Inicio</a></li>
             <li><a href="devocionales.html">Devocionales</a></li>
-            <li><a href="comparte.html">Interactua con nosotros</a></li>
+            <li><a href="comparte.html">Oramos por ti</a></li>
         </ul>
     </header>
-</head>
-<body>
-    <div class="container">
-        <section class="comments-section">
-            <h4>Comentarios</h4>
-            <div class="comment-box">
-                <textarea id="comment-input" class="materialize-textarea" placeholder="Escribe tu comentario aquí..."></textarea>
-                <button id="submit-comment" class="btn waves-effect waves-light" type="button">Publicar</button>
-            </div>
-            <div id="comments-list">
-                <!-- Comentarios aparecerán aquí -->
-            </div>
-        </section>
-    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="script.js"></script>
-    <script>
-        
-    </script>
+    <div class="container-form">
+        <h2 class="titulo">Oramos por ti</h2>
+
+        <p class="parrafo-nosotros">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deleniti corrupti officiis qui sequi doloribus quos quod dignissimos animi aliquam cum dolore,</p>
+
+
+        <form action="https://formspree.io/f/xqkrrboe" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="asunto">Motivo de Oracion:</label>
+                <input type="text" id="asunto" name="asunto" required>
+            </div>
+            <input type="hidden" name="_replyto" value="isaac05castro@gmail.com">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 </body>
+<script src="script.js"></script>
+
 </html>
