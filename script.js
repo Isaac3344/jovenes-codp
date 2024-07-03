@@ -142,25 +142,3 @@ function updateOutput(value) {
 }
 
 
-const socialButton = document.getElementById('social-button');
-const socialIcon = document.getElementById('social-icon');
-
-const icons = [
-    { src: 'facebook.svg', alt: 'Logo de Facebook' },
-    { src: 'twitter.svg', alt: 'Logo de Twitter' },
-    { src: 'instagram.svg', alt: 'Logo de Instagram' } // Puedes añadir más iconos aquí
-];
-
-let currentIconIndex = 0;
-
-socialButton.addEventListener('click', () => {
-    socialIcon.style.opacity = 0; // Inicia la transición de opacidad
-
-    setTimeout(() => {
-        currentIconIndex = (currentIconIndex + 1) % icons.length;
-        socialIcon.src = icons[currentIconIndex].src;
-        socialIcon.alt = icons[currentIconIndex].alt;
-        socialIcon.style.opacity = 1; // Restablece la opacidad después del cambio
-    }, 300); // 300ms para que coincida con la duración de la transición de opacidad
-});
-

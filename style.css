@@ -45,6 +45,10 @@ body {
     cursor: pointer;
 }
 
+.enlace-principal{
+    color: #fff;
+}
+
 .menu-toggle {
     display: none;
     flex-direction: column;
@@ -1484,7 +1488,9 @@ input[type="range"]::-moz-range-track {
     bottom: 16px;    /* A 16px del borde inferior */
     right: 16px;     /* A 16px del borde derecho */
     z-index: 9999;   /* Asegura que esté por encima de otros elementos */
+    align-items: center;
 }
+
 
 .social span {
     z-index: 1;
@@ -1494,30 +1500,31 @@ input[type="range"]::-moz-range-track {
     width: 11.5em;
     border-radius: 25px;
     color: #fff;
-    line-height: 55px;
+    line-height: 3em;
     font-size: 18px;
-    letter-spacing: 3px;
+    overflow: hidden;
     transition: all 0.5s;
 }
 
 .social .container {
     z-index: -1;
     width: 0;
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     transform: translateY(-50px);
-    transition: all 0.4s;
+    transition: all 0.6s;
 }
 
 .social .container, .bi-whatsapp, .bi-tiktok, .bi-instagram {
-    padding: 0 10px;
+    margin: 4px;
+    gap: 10px;
 }
 
 
 .bi-whatsapp:hover, .bi-tiktok:hover, .bi-instagram:hover{
     z-index: 2;
-    width: 30%;
+    transform: scale(1.1);
 }
 
 
@@ -1528,4 +1535,26 @@ input[type="range"]::-moz-range-track {
 .social:hover .container {
     z-index: 2;
     width: 100%;
+}
+
+@keyframes latido {
+    0%, 100% {
+        transform: scale(1); /* Tamaño normal */
+    }
+    50% {
+        transform: scale(1.2); /* Crece un 20% */
+    }
+}
+
+.bi-heart-fill {
+    animation: latido 1.5s infinite; /* Aplica la animación */
+    animation-timing-function: ease-in-out; /* Suaviza la animación */
+    color: rgb(226, 43, 43);
+    margin-left: .7em;
+    
+}
+
+.bi-heart-fill:hover {
+    animation: latido 0.6s infinite; /* Aumenta la velocidad al hacer hover */
+    animation-timing-function: ease-in-out;
 }
