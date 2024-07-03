@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jovenes Codp</title>
+</head>
+
+<body>
+
+    <!--MENU DE OPCIONES-->
+    <header class="navbar">
+        <div class="logo">Jovenes Codp</div>
+        <div class="menu-toggle" id="menu-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="devocionales.html">Devocionales</a></li>
+            <li><a href="comparte.html">Oramos por ti</a></li>
+        </ul>
+    </header>
+    <div class="container2">
+        <form class="form" action="https://formspree.io/f/mvgpozng" method="POST">
+            <p class="title">Registro </p>
+            <p class="message">Ayudanos con una breve informacion</p>
+            <label>
+                <input class="input" id="Nombres" name="Nombres" type="text" placeholder="" required="">
+                <span>Nombres Completos</span>
+
+            </label>
+
+            <label>
+                <input class="input" id="Apellidos" name="Apellidos" type="text" placeholder="" required="">
+                <span>Apellidos Completos</span>
+            </label>
+
+            <label>
+                <input class="input" id="Celular" name="Celular" type="text" placeholder="" required="">
+                <span> Telefono</span>
+            </label>
+
+            <div class="range-container">
+                <label for="Edad">Edad</label>
+                <div class="range-wrapper">
+                    <input type="range" name="Edad" id="Edad" min="5" max="30" value="5" oninput="updateOutput(this.value)">
+                    <output id="Edad-output" class="price-output" for="Edad">5</output>
+                </div>
+            </div>
+
+            <label>
+                <input class="input" id="¿Porque deseas formar parte?" name="¿Porque deseas formar parte?" type="text"
+                    placeholder="" required="">
+                <span>¿Porque deseas formar parte?</span>
+            </label>
+
+            <input type="hidden" name="_replyto" value="jovenescodp@gmail.com" >
+            <button class="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

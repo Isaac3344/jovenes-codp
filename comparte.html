@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Jovenes Codp</title>
 </head>
+
 <body>
 
-     <!--MENU DE OPCIONES-->
-     <header class="navbar">
+    <!--MENU DE OPCIONES-->
+    <header class="navbar">
         <div class="logo">Jovenes Codp</div>
         <div class="menu-toggle" id="menu-toggle">
             <div class="bar"></div>
@@ -26,7 +28,10 @@
     <div class="container-form">
         <h2 class="titulo">Oramos por ti</h2>
 
-        <p class="parrafo-nosotros">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deleniti corrupti officiis qui sequi doloribus quos quod dignissimos animi aliquam cum dolore,</p>
+        <p class="parrafo-nosotros">Si tienes una petición, no dudes en compartirla. Permite que nos unamos a ti en
+            oración, confiando en que juntos, podemos encontrar la paz y la respuesta que necesitamos. La Biblia
+            nos invita a llevar nuestras cargas unos a otros, como se menciona en Gálatas 6:2: “Llevad los unos las
+            cargas de los otros, y cumplid así la ley de Cristo”.</p>
 
 
         <form action="https://formspree.io/f/xqkrrboe" method="POST">
@@ -38,11 +43,39 @@
                 <label for="asunto">Motivo de Oracion:</label>
                 <input type="text" id="asunto" name="asunto" required>
             </div>
-            <input type="hidden" name="_replyto" value="isaac05castro@gmail.com">
+            <input type="hidden" name="_replyto" value="jovenescodp@gmail.com">
             <button type="submit">Enviar</button>
         </form>
     </div>
+    <!--FOOTER-->
+    <div class="social-container">
+        <div class="social-panel">
+            <div class="social-icons">
+                <a href="https://www.whatsapp.com" target="_blank" class="social-icon whatsapp" aria-label="WhatsApp">
+                    <img src="https://img.icons8.com/color/48/whatsapp.png" alt="WhatsApp">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon instagram"
+                    aria-label="Instagram">
+                    <img src="https://img.icons8.com/fluency/48/instagram-new.png" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com" target="_blank" class="social-icon facebook" aria-label="Facebook">
+                    <img src="https://img.icons8.com/fluency/48/facebook-new.png" alt="Facebook">
+                </a>
+                <a href="https://www.tiktok.com" target="_blank" class="social-icon tiktok" aria-label="TikTok">
+                    <img src="https://img.icons8.com/fluency/48/tiktok.png" alt="TikTok">
+                </a>
+            </div>
+            <div class="close-panel" aria-label="Cerrar Panel">×</div>
+        </div>
+
+        <button class="social-tab">
+            <span>Nuestras Redes</span>
+        </button>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+
 <script src="script.js"></script>
 
 </html>
